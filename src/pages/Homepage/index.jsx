@@ -3,27 +3,27 @@ import "./homepage.css";
 
 export const Homepage = () => {
   return (
-    <div class="app-container">
-      <div class="app-header">
-        <div class="app-header-contents">
-          <div class="text-md">Hi, User</div>
-          <div class="page-heading text-lg">Let's Play &amp; Learn</div>
-          <div class="search-bar input-group">
+    <div className="app-container">
+      <div className="app-header">
+        <div className="app-header-contents">
+          <div className="text-md">Hi, User</div>
+          <div className="page-heading text-lg">Let's Play &amp; Learn</div>
+          <div className="search-bar input-group">
             <input
               type="text"
-              class="input search-bar"
+              className="input search-bar"
               placeholder="Search quizes or categories"
             />
-            <span class="material-icons">search</span>
+            <span className="material-icons">search</span>
           </div>
-          <div class="btn btn-primary btn-icon">
+          <div className="btn btn-primary btn-icon">
             Start a random quiz
-            <span class="material-icons">arrow_right_alt</span>
+            <span className="material-icons">arrow_right_alt</span>
           </div>
         </div>
       </div>
       <h2>Popular Categories</h2>
-      <div class="grid grid-col-4 categories">
+      <div className="grid grid-col-4 categories">
         <CategoryCard
           title={"Tech"}
           imgSrc={"https://source.unsplash.com/FO7JIlwjOtU"}
@@ -42,7 +42,7 @@ export const Homepage = () => {
         <CategoryCard
           title={[
             "View All",
-            <span class="material-icons"> arrow_right_alt</span>,
+            <span className="material-icons"> arrow_right_alt</span>,
           ]}
           imgSrc={"https://source.unsplash.com/pJadQetzTkI"}
           to={"/categories"}

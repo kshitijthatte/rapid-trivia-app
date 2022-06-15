@@ -25,10 +25,10 @@ const categories = [
 
 export const Categories = () => {
   return (
-    <div class="app-container">
+    <div className="app-container">
       <h2>Quiz Categories</h2>
-      <div class="text-sm">Pick a category to start the quiz</div>
-      <div class="grid grid-col-4 categories">
+      <div className="text-sm">Pick a category to start the quiz</div>
+      <div className="grid grid-col-4 categories">
         {categories.map(({ title, imgSrc, to }) => (
           <CategoryCard title={title} imgSrc={imgSrc} to={to} />
         ))}

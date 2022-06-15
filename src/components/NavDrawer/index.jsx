@@ -3,35 +3,35 @@ import { Navbar } from "../Navbar";
 
 export const NavDrawer = ({ children }) => {
   return (
-    <div class="drawer-frame">
-      <aside class="drawer">
-        <div class="drawer-header">
-          <div class="text-md">Hi, User</div>
-          <div class="text-sm">jhondoe@tmail.com</div>
+    <div className="drawer-frame">
+      <aside className="drawer">
+        <div className="drawer-header">
+          <div className="text-md">Hi, User</div>
+          <div className="text-sm">jhondoe@tmail.com</div>
         </div>
-        <hr class="divider" />
-        <div class="drawer-content">
-          <nav class="side-nav">
-            <Link class="side-nav-item" to="/">
-              <span class="material-icons">play_arrow</span>
+        <hr className="divider" />
+        <div className="drawer-content">
+          <nav className="side-nav">
+            <Link className="side-nav-item" to="/">
+              <span className="material-icons">play_arrow</span>
               Play
             </Link>
-            <Link class="side-nav-item" to="/">
-              <span class="material-icons">leaderboard</span>
+            <Link className="side-nav-item" to="/">
+              <span className="material-icons">leaderboard</span>
               Leaderboard
             </Link>
-            <Link class="side-nav-item" to="/">
-              <span class="material-icons">notifications</span>
+            <Link className="side-nav-item" to="/">
+              <span className="material-icons">notifications</span>
               Notifications
             </Link>
-            <Link class="side-nav-item" to="/">
-              <span class="material-icons">contact_support</span>
+            <Link className="side-nav-item" to="/">
+              <span className="material-icons">contact_support</span>
               Support
             </Link>
           </nav>
         </div>
       </aside>
-      <div class="main">
+      <div className="main">
         <Navbar />
         {children}
       </div>
