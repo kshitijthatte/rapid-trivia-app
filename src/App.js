@@ -1,5 +1,5 @@
 import "./styles.css";
-import Homepage from "./pages/Homepage";
+import {Homepage, Categories} from "./pages";
 import { NavDrawer } from "./components";
 import { Route, Routes } from "react-router-dom";
 
@@ -8,6 +8,7 @@ function App() {
     <NavDrawer>
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </NavDrawer>
   );
