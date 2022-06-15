@@ -1,0 +1,24 @@
+@import url(https://iceberg-ui.netlify.app/styles.css);
+
+.divider {
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.margin-l-1 {
+  margin-left: 1rem;
+}
+
+a.btn {
+  display: inline-block;
+}
+
+.app-container {
+  padding: 1rem;
+}
+
+.list-group {
+  list-style: auto;
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+}
