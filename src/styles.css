@@ -22,3 +22,9 @@ a.btn {
   margin-left: 2rem;
   padding: 0.5rem 0;
 }
+
+@media screen and (max-width: 700px) {
+  .drawer {
+    display: none;
+  }
+}

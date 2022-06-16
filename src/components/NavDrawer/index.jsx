@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../Navbar";
 
 export const NavDrawer = ({ children }) => {
+  const [drawerDisplay, setDrawerDisplay] = useState("");
+
   return (
     <div className="drawer-frame">
-      <aside className="drawer">
+      <aside className="drawer" style={{ display: drawerDisplay }}>
         <div className="drawer-header">
           <div className="text-md">Hi, User</div>
           <div className="text-sm">jhondoe@tmail.com</div>
@@ -32,7 +35,10 @@ export const NavDrawer = ({ children }) => {
         </div>
       </aside>
       <div className="main">
-        <Navbar />
+        <Navbar
+          drawerDisplay={drawerDisplay}
+          setDrawerDisplay={setDrawerDisplay}
+        />
         {children}
       </div>
     </div>

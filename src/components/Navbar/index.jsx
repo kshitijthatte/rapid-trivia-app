@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ drawerDisplay, setDrawerDisplay }) => {
   return (
     <nav className="nav">
       <div className="nav-section">
-        <button className="material-icons nav-icon header-navigation-icon">
+        <button
+          className="material-icons nav-icon header-navigation-icon"
+          onClick={() =>
+            drawerDisplay === "flex"
+              ? setDrawerDisplay("none")
+              : setDrawerDisplay("flex")
+          }
+        >
           menu
         </button>
         <Link className="nav-title" to="/">
