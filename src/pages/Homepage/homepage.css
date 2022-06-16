@@ -1,0 +1,67 @@
+/* App Header Styles */
+
+.app-header {
+  padding: 0 5rem;
+  background: center / cover no-repeat url(./header-img.jpg);
+  border-radius: 0.5rem;
+  height: 50vh;
+  margin-bottom: 1rem;
+}
+
+.app-header-contents {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  gap: 0.5rem;
+}
+
+.app-header-contents .btn {
+  flex-wrap: wrap;
+  max-width: max-content;
+}
+
+.app-header-contents .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 10rem;
+  width: 40%;
+}
+
+.app-header-contents .search-bar input {
+  width: 100%;
+}
+
+/* Categories Styles */
+
+.categories {
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.category-img {
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app-header {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+}
