@@ -5,3 +5,4 @@ export { Signup } from "./Signup";
 export { Rules } from "./Rules";
 export { Quiz } from "./Quiz";
 export { Result } from "./Result";
+export { NotFound } from "./NotFound";
